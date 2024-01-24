@@ -1,0 +1,11 @@
+#!/bin/bash
+#!/bin/bash
+
+# List files in the current directory, showing hidden files:
+ls -la .
+
+# List files in the parent directory, showing hidden files:
+ls -la ..
+
+# List files in the /boot directory, showing hidden files:
+ls -la /boot
