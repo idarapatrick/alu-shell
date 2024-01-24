@@ -1,2 +1,2 @@
 #!/bin/bash
-cp $(find . -maxdepth 1 -name "*.html" -not -newer ../"$(basename --)") ..
+cp -un *.html ../
