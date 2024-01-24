@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . .. /boot
+find . .. /boot -type f -print0 | xargs -0 ls -la
