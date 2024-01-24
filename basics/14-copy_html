@@ -1,2 +1,2 @@
 #!/bin/bash
-cp $(find . -maxdepth 1 -name "*.html" ! -newer ../"$(basename --)") ..
+find . -maxdepth 1 -name "*.html" ! -newer ../"$(basename --)" -exec cp -t .. {} +
