@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# while and head
+ 
+i=0
+
+while [ "$i" -le 12 ]; do
+    echo "Hour: $i" 
+    min=1
+    while [ "$min" -lt 60 ]; do
+        echo "$min"
+        ((min++))
+    done    
+    ((i++))
+done

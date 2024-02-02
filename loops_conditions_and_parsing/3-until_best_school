@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Print Best school x10 with until
+i=0
+
+until false; do
+    echo "Best School"
+    ((i++))
+    if [[ $i -lt 10 ]]; then 
+        continue
+    else
+        break
+    fi
+done
