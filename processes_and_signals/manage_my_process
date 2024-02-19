@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Write to /tmp/my_process indefinitely
+
+sleep() {
+! read -rt "$1"
+} <> <(:)
+
+while true
+do
+  echo 'I am alive!'
+  sleep 2
+done > "${TMPDIR:-/tmp}/my_process"
